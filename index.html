@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kalkulator_zysków – opis aplikacji</title>
+  <style>
+    body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; line-height: 1.6;
+           color: #1d1d1f; background: #f7f7f9; }
+    main { max-width: 720px; margin: 0 auto; padding: 40px 20px 60px; }
+    h1 { font-size: 1.6rem; margin: 0 0 8px; }
+    h2 { font-size: 1.1rem; margin: 28px 0 8px; }
+    ul { padding-left: 1.2rem; }
+    .muted { color: #5f5f66; }
+    a { color: #0a58ca; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Kalkulator_zysków – opis aplikacji</h1>
+    <p class="muted">Wewnętrzne narzędzie firmy Arizone</p>
+
+    <h2>Do czego służy</h2>
+    <p>Kalkulator_zysków to wewnętrzne narzędzie firmy Arizone do analizy rentowności własnej sprzedaży na Allegro.
+      Aplikacja działa lokalnie na komputerze sprzedawcy i nie jest udostępniana innym sprzedawcom.</p>
+
+    <h2>Jakie dane pobiera z Allegro</h2>
+    <p>Aplikacja korzysta z REST API Allegro wyłącznie w trybie odczytu i pobiera:</p>
+    <ul>
+      <li>zamówienia i zwroty,</li>
+      <li>opłaty i wpisy rozliczeniowe,</li>
+      <li>oferty i ustawienia sprzedaży,</li>
+      <li>identyfikator i nazwę konta.</li>
+    </ul>
+    <p>Aplikacja niczego nie zmienia na koncie Allegro.</p>
+
+    <h2>Bezpieczeństwo i prywatność</h2>
+    <ul>
+      <li>Dane zostają na komputerze właściciela konta – nie są wysyłane do żadnych innych usług.</li>
+      <li>Tokeny dostępu są przechowywane lokalnie w postaci zaszyfrowanej.</li>
+      <li>Dostęp aplikacji można w każdej chwili cofnąć w Allegro: Moje Allegro → Moje konto → Powiązane aplikacje.</li>
+    </ul>
+
+    <h2>Kontakt</h2>
+    <p><a href="mailto:jsobota@arizone.pl">jsobota@arizone.pl</a></p>
+  </main>
+</body>
+</html>
